@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>[Student Name] — AFD Lab</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .member-page {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+    .member-header {
+      display: flex;
+      gap: 2.5rem;
+      align-items: flex-start;
+      margin-bottom: 3rem;
+    }
+    .member-avatar {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background: var(--accent-lt);
+      flex-shrink: 0;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3.5rem;
+      color: var(--accent);
+      border: 3px solid var(--border);
+    }
+    .member-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .member-meta h1 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 0.25rem;
+    }
+    .member-meta .role-badge {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--accent);
+      background: var(--accent-lt);
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      margin-bottom: 0.75rem;
+    }
+    .member-meta p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+    .member-links {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    .member-link {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--accent);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.25rem 0.65rem;
+      transition: background 0.15s;
+    }
+    .member-link:hover { background: var(--accent-lt); }
+
+    .member-section {
+      margin-bottom: 2.5rem;
+    }
+    .member-section h2 {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .member-section p {
+      font-size: 0.95rem;
+      color: var(--text);
+      line-height: 1.75;
+    }
+    .interest-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      list-style: none;
+    }
+    .interest-list li {
+      font-size: 0.83rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.25rem 0.7rem;
+      color: var(--text);
+    }
+    .bio-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    .bio-list li {
+      display: grid;
+      grid-template-columns: 7rem 1fr;
+      gap: 0.75rem;
+      font-size: 0.88rem;
+      line-height: 1.5;
+    }
+    .bio-list .bio-date {
+      color: var(--accent);
+      font-weight: 500;
+      white-space: nowrap;
+    }
+    .bio-list .bio-content {
+      color: var(--text);
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 2rem;
+      transition: color 0.15s;
+    }
+    .back-link:hover { color: var(--accent); }
+
+    @media (max-width: 600px) {
+      .member-header { flex-direction: column; align-items: center; text-align: center; }
+      .member-links { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html", style="display: flex; align-items: center; justify-content: flex-start;">
+      <img src="../img/snu_ui.png" alt="SNU" class="nav-logo-img">
+      <div class="nav-logo">
+        <span>AFD Lab</span>
+        <span>Seoul National University</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#members" class="active">Members</a></li>
+      <li><a href="../publications.html">Publications</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="member-page">
+  <a href="../index.html#members" class="back-link">← All members</a>
+
+  <div class="member-header">
+    <div class="member-avatar"><img src="../img/truefalse.jpg" alt="Lab mascot"></div>
+    <div class="member-meta">
+      <h1>Yujin Cha</h1>
+      <span class="role-badge">M.S. Student</span>
+      <p>Enrolled 2025 Spring</p>
+      <div class="member-links">
+        <a href="mailto:chayuj0@snu.ac.kr" class="member-link">Email</a>
+        <a href="https://scholar.google.com/citations?user=0lZsx6UAAAAJ&hl=en" class="member-link">Google Scholar</a>
+        <a href="https://www.linkedin.com/in/cha-yujin/" class="member-link">LinkedIn</a>
+        <a href="#" class="member-link">CV</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="member-section">
+    <h2>Research Interests</h2>
+    <ul class="interest-list">
+      <li>Differential privacy</li>
+      <li>Privacy</li>
+      <li>Computational Geometry</li>
+      <li>Algorithms</li>
+    </ul>
+  </div>
+
+  <div class="member-section">
+    <h2>Bio</h2>
+    <p>
+      <ul class="bio-list">
+        <li>
+          <span class="bio-date">2025. 02</span>
+          <span class="bio-content">B.A. in Sookmyung Women's University</span>
+        </li>
+        <li>
+          <span class="bio-date">2023. 12 —<br>2024. 07</span>
+          <span class="bio-content">Internship, POSTECH Algorithms Lab</span>
+        </li>
+      </ul>
+      <div style="margin: 1rem">
+        
+      </div>
+    </p>
+  </div>
+
+  <div class="member-section">
+    <h2>Publications</h2>
+    <div class="pub-list">
+      <div class="pub-item">
+        <p class="pub-year">KCC 2024</p>
+        <p class="pub-title">Balanced Parallel Two-line-center Problem</p>
+        <p class="pub-authors">Yujin Cha, Chaeyoon Chung, Hee-Kap Ahn</p>
+        <div class="pub-links">
+          <a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11862384" class="pub-badge">Paper</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2025 AFD Lab, Seoul National University · <a href="https://github.com/snu-afd" style="color:inherit">GitHub</a></p>
+</footer>
+
+</body>
+</html>

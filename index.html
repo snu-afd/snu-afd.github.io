@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AFD Lab — Seoul National University</title>
+  <meta name="description" content="Algorithmic Foundations for Data Science Lab, Dept. of Computer Science & Engineering, Seoul National University." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html", style="display: flex; align-items: center; justify-content: flex-start;">
+      <img src="img/snu_ui.png" alt="SNU" class="nav-logo-img">
+      <div class="nav-logo">
+        <span>AFD Lab</span>
+        <span>Seoul National University</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#members">Members</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ── Hero ── -->
+<header class="hero">
+  <p class="hero-eyebrow">Dept. of Computer Science &amp; Engineering · Seoul National University</p>
+  <h1>Algorithmic Foundations<br>of Data Science</h1>
+  <div class="hero-rule" aria-hidden="true"></div>
+  <p class="hero-desc">
+    <!-- We design algorithms with rigorous theoretical guarantees for large-scale data problems —
+    from differential privacy to graph algorithms and beyond. -->
+    We study algorithms with provable guarantees — approximation, privacy, and efficiency — 
+    often for problems where the data itself is uncertain, sensitive, or massive. 
+    Our work is theoretical, but the problems are drawn from machine learning and data science.
+  </p>
+  <div class="hero-cta">
+    <a href="#members" class="btn btn-primary">Meet the lab</a>
+    <a href="publications.html" class="btn btn-ghost">Publications</a>
+  </div>
+</header>
+
+<!-- ── Research ── -->
+<section id="about">
+  <p class="section-label">Research</p>
+  <h2 class="section-title">What we work on</h2>
+  <p class="section-body">
+    Our work sits at the intersection of algorithm design, data science, and theoretical computer science.
+    We care about provable correctness and efficiency, not just empirical performance.
+  </p>
+  <div class="research-grid">
+    <div class="research-card">
+      <div class="research-icon">🔒</div>
+      <h3>Differential Privacy</h3>
+      <p>
+        Algorithms that answer queries and learn from data with formal privacy guarantees.
+        We design locally private models and solve private graph problems. 
+      </p>
+    </div>
+    <div class="research-card">
+      <div class="research-icon">📐</div>
+      <h3>Approximation Algorithms</h3>
+      <p>
+        Efficient algorithms with provable approximation ratios for hard combinatorial problems, 
+        including clustering, facility location, and correlation clustering.
+      </p>
+    </div>
+    <div class="research-card">
+      <div class="research-icon">📊</div>
+      <h3>Learning Theory &amp; Optimization</h3>
+      <p>
+        Providing theoretical foundations of machine learning, 
+        such as min-max optimization, stochastic methods, and low-rank approximation with convergence guarantees.
+      </p>
+    </div>
+    <div class="research-card">
+      <div class="research-icon">🕸️</div>
+      <h3>Algorithmic Graph Problems</h3>
+      <p>
+        Graph algorithms with rigorous guarantees, from distance computation under privacy constraints to structural problems on large networks.
+      </p>
+    </div>
+    <div class="research-card">
+      <div class="research-icon">📍</div>
+      <h3>Computational Geometry</h3>
+      <p>
+        Algorithms for geometric problems with imprecise or uncertain input, including Fréchet distance, color-spanning sets, and convex hull computation.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ── PI ── -->
+<section id="pi">
+  <p class="section-label">Advisor</p>
+  <div class="pi-card">
+    <div class="pi-photo" aria-label="Professor photo"><img src="img/truefalse.jpg" alt="Lab mascot"></div>
+    <div class="pi-info">
+      <h3>Prof. Chenglin Fan</h3>
+      <p class="pi-title">Associate Professor, Dept. of Computer Science &amp; Engineering</p>
+      <p>
+        Research Interests: Algorithms Theory, Differential Privacy, Learning Theory, Optimization, LLM for Algorithm Design.
+      </p>
+      <div class="pi-links">
+        <a href="mailto:fanchenglin@snu.ac.kr" class="pi-link">Email</a>
+        <a href="https://dblp.org/pid/76/8243.html" class="pi-link">DBLP</a>
+        <a href="https://www.linkedin.com/in/chenglin-fan-3a38b0a1/" class="pi-link">LinkedIn</a>
+        <a href="#" class="pi-link">CV</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Members ── -->
+<section id="members">
+  <p class="section-label">People</p>
+  <h2 class="section-title">Graduate students</h2>
+  <div class="members-grid", style="margin-bottom: 3rem">
+
+    <a href="members/template.html" class="member-card">
+      <div class="member-photo"><img src="img/truefalse.jpg" alt="Lab mascot"></div>
+      <div class="member-info">
+        <h3>Ruibo Duan</h3>
+        <p class="role">Ph.D. Student</p>
+        <p class="research">Machine Learning, Large Language Models</p>
+      </div>
+    </a>
+
+    <a href="members/template.html" class="member-card">
+      <div class="member-photo"><img src="img/truefalse.jpg" alt="Lab mascot"></div>
+      <div class="member-info">
+        <h3>Yuxin Liu</h3>
+        <p class="role">M.S. Student</p>
+        <p class="research">Algorithms, Machine Learning</p>
+      </div>
+    </a>
+
+    <a href="members/cha-yujin.html" class="member-card">
+      <div class="member-photo"><img src="img/truefalse.jpg" alt="Lab mascot"></div>
+      <div class="member-info">
+        <h3>Yujin Cha</h3>
+        <p class="role">M.S. Student</p>
+        <p class="research">Privacy, Computational Geometry, Algorithms</p>
+      </div>
+    </a>
+    <a href="members/template.html" class="member-card">
+      <div class="member-photo"><img src="img/truefalse.jpg" alt="Lab mascot"></div>
+      <div class="member-info">
+        <h3>Xinyao Dong</h3>
+        <p class="role">M.S. Student</p>
+        <p class="research">Differential Privacy</p>
+      </div>
+    </a>
+    <a href="members/template.html" class="member-card">
+      <div class="member-photo"><img src="img/truefalse.jpg" alt="Lab mascot"></div>
+      <div class="member-info">
+        <h3>Hyejun Park</h3>
+        <p class="role">M.S.</p>
+        <p class="research">Algorithms Theory</p>
+      </div>
+    </a>
+    <a href="members/template.html" class="member-card">
+      <div class="member-photo"><img src="img/truefalse.jpg" alt="Lab mascot"></div>
+      <div class="member-info">
+        <h3>Seung-Min Joo</h3>
+        <p class="role">Integrated Ph.D.</p>
+        <p class="research">Differential Privacy, Algorithms Theory</p>
+      </div>
+    </a>
+    <a href="members/template.html" class="member-card">
+      <div class="member-photo"><img src="img/truefalse.jpg" alt="Lab mascot"></div>
+      <div class="member-info">
+        <h3>Sehyeon Park</h3>
+        <p class="role">Integrated Ph.D.</p>
+        <p class="research">Differential Privacy, Algorithms Theory, Graph Theory</p>
+      </div>
+    </a>
+    <a href="members/template.html" class="member-card">
+      <div class="member-photo"><img src="img/truefalse.jpg" alt="Lab mascot"></div>
+      <div class="member-info">
+        <h3>Changseok Yang</h3>
+        <p class="role">Integrated Ph.D.</p>
+        <p class="research">?</p>
+      </div>
+    </a>
+    <a href="members/template.html" class="member-card">
+      <div class="member-photo"><img src="img/truefalse.jpg" alt="Lab mascot"></div>
+      <div class="member-info">
+        <h3>Yongki Lee</h3>
+        <p class="role">M.S.</p>
+        <p class="research">Optimazation, Differential Privacy, Graph Theory</p>
+      </div>
+    </a>
+  </div>
+
+
+  <h2 class="section-title">Undergraduate Interns</h2>
+
+  <div class="members-grid">
+    <a class="member-card">
+      <div class="member-photo"><img src="img/truefalse.jpg" alt="Lab mascot"></div>
+      <div class="member-info">
+        <h3>Dahoon Lee</h3>
+        <p class="role">Seoul National University</p>
+      </div>
+    </a>
+    <a class="member-card">
+      <div class="member-photo"><img src="img/truefalse.jpg" alt="Lab mascot"></div>
+      <div class="member-info">
+        <h3>Changki Yoon</h3>
+        <p class="role">Seoul National University</p>
+      </div>
+    </a>
+    <a class="member-card">
+      <div class="member-photo"><img src="img/truefalse.jpg" alt="Lab mascot"></div>
+      <div class="member-info">
+        <h3>Inhyuk Park</h3>
+        <p class="role">Seoul National University</p>
+      </div>
+    </a>
+    <a class="member-card">
+      <div class="member-photo"><img src="img/truefalse.jpg" alt="Lab mascot"></div>
+      <div class="member-info">
+        <h3>Hongeun Im</h3>
+        <p class="role">Seoul National University</p>
+      </div>
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- ── Contact ── -->
+<section id="contact">
+  <p class="section-label">Contact</p>
+  <h2 class="section-title">Find us</h2>
+  <div class="contact-grid">
+    <div class="contact-block">
+      <h3>Location</h3>
+      <p>
+        Building 302, Room 317<br>
+        Seoul National University<br>
+        1 Gwanak-ro, Gwanak-gu<br>
+        Seoul 08826, Republic of Korea
+      </p>
+    </div>
+    <div class="contact-block">
+      <h3>General Inquiries</h3>
+      <p>
+        For research inquiries or prospective student questions,<br>
+        please email the PI directly.<br><br>
+        <a href="mailto:prof@snu.ac.kr">fanchenglin@snu.ac.kr</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 AFD Lab, Seoul National University · <a href="https://github.com/snu-afd" style="color:inherit">GitHub</a></p>
+</footer>
+
+</body>
+</html>

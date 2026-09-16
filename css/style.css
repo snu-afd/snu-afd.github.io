@@ -267,21 +267,79 @@ section {
 .member-info {
   padding: 1rem;
 }
-.member-info h3 {
+.member-info h3, .member-row-name {
   font-size: 0.95rem;
   font-weight: 600;
   color: var(--navy);
 }
-.member-info .role {
+.member-info .role{
   font-size: 0.8rem;
   color: var(--accent);
   margin-top: 0.2rem;
   font-weight: 500;
 }
-.member-info .research {
+.member-info .research{
   font-size: 0.78rem;
   color: var(--muted);
   margin-top: 0.3rem;
+}
+
+.member-rows {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.75rem;
+  list-style: none;
+  margin: 0 0 3rem;
+  padding: 0;
+}
+.member-row {
+  display: grid;
+  grid-template-columns: 10rem minmax(0, 1fr);
+  align-items: center;
+  gap: 1.25rem;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 1rem 1.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  text-align: left;
+  line-height: 1.6;
+}
+.member-row-name {
+  min-width: 0;
+}
+.member-row-details {
+  min-width: 0;
+  padding-left: 1.25rem;
+  border-left: 1px solid #cbd5e1;
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: 751px) {
+  .member-row:has(> .member-row-research) {
+    grid-template-columns: 10rem minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+
+.member-row-research {
+  min-width: 0;
+  padding-left: 1.25rem;
+  border-left: 1px solid #cbd5e1;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 750px) {
+  .member-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.25rem;
+    padding: 1rem 1.125rem;
+  }
+  .member-row-details, .member-row-research{
+    padding-left: 0;
+    border-left: 0;
+  }
 }
 
 /* ── PI card ── */
